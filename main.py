@@ -38,6 +38,7 @@ def main():
     answers = inquirer.prompt(categories)
     password = Generator(length, answers.get("categories"))
     print(password.generate())
+    password.test
 
 
 if __name__ == "__main__":
